@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InnovateHub</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="flex-container">
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">IH</span>
+      <span class="logo-text">InnovateHub</span>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#" rel="ugc">Design Team</a></li>
+        <li><a href="#" rel="ugc">Marketing Team</a></li>
+        <li><a href="#" rel="ugc">Development Team</a></li>
+        <li><button id="createTeamBtn">Create a team</button></li>
+      </ul>
+      <div class="folders">
+        <div class="folder-heading">FOLDERS</div>
+        <ul class="folder-list">
+          <li><a href="#" rel="ugc">Products</a></li>
+          <li><a href="#" rel="ugc">Roadmap</a></li>
+          <li><a href="#" rel="ugc">Feedback</a></li>
+          <li><a href="#" rel="ugc">Performance</a></li>
+          <li><a href="#" rel="ugc">Team</a></li>
+          <li><a href="#" rel="ugc">Analytics</a></li>
+          <li><a href="#" rel="ugc">Add new stub</a></li>
+        </ul>
+      </div>
+      <div class="sections">
+        <div class="section-heading">SALES</div>
+        <div class="section-heading">DESIGN</div>
+        <div class="section-heading">OFFICE</div>
+        <div class="section-heading">LEGAL</div>
+      </div>
+    </nav>
+    <div class="sidebar-bottom">
+      <button id="inviteBtn">Invite teammates</button>
+      <a href="#" class="help-link" rel="ugc">Help and first steps</a>
+      <button id="trialBtn">7 days left on trial</button>
+      <button id="billingBtn">Add billing</button>
+    </div>
+  </aside>
+  <main class="main-content">
+    <h1>Products</h1>
+    <hr>
+    <div class="filter-section">
+      <div class="filter-buttons">
+        <button>All brands</button>
+        <button>Desk</button>
+        <button>Tags</button>
+        <button>Sort</button>
+        <button>Filter</button>
+      </div>
+
+      <div class="search-buttons">
+        <button id="meetingBtn">Meeting</button>
+        <button id="importExportBtn">Import / Export</button>
+      </div>
+    </div>
+    <div class="product-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Description</th>
+            <th>Members</th>
+            <th>Categories</th>
+            <th>Tags</th>
+            <th>Next meeting</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="brand-logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/127/473/original/microsoft-logo-microsoft-icon-transparent-free-png.png" alt="Microsoft" width="50px">
+                <h4>Microsoft</h4>
+              </div>
+            </td>
+            <td>Description of Microsoft</td>
+            <td>
+              <div class="avatar-container">
+                <img src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-1-512.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-1-512.png" class="img" alt="Avatar 5" width="30px">
+              </div>
+              
+            </td>
+            <td>
+                <span class="category">Technology</span>
+            </td>
+            <td>
+                <span class="tags">#TechGiant</span>
+            </td>
+            <td>
+                <span class="nextMeeting">In 1 hour</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <div class="brand-logo">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google" width="50px">
+                    <h4>Google</h4>
+                </div>
+            </td>
+            <td>Description of Google</td>
+            <td>
+                <div class="avatar-container">
+                    <img src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png" class="img" alt="Avatar 5" width="30px">
+                    <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-1-512.png" class="img" alt="Avatar 5" width="30px">
+                    <img src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png" class="img" alt="Avatar 5" width="30px">
+                    <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-1-512.png" class="img" alt="Avatar 5" width="30px">
+                  </div>
+            </td>
+            <td>
+                <span class="category">Technology</span>
+            </td>
+            <td>
+                <span class="tags">#TechGiant</span>
+            </td>
+            <td>
+                <span class="nextMeeting">In 1 hour</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="brand-logo">
+                <img src="https://play-lh.googleusercontent.com/EbdHNp8uMZcyzHqqf6IxkqYaUf0QjMzJyNOk33qEsrjf0_vVCPKq4QbOCjJx7jZ3LCs" alt="Microsoft" width="50px">
+                <h4>Wix</h4>
+              </div>
+            </td>
+            <td>Description of Microsoft</td>
+            <td>
+              <div class="avatar-container">
+                <img src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-1-512.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-1-512.png" class="img" alt="Avatar 5" width="30px">
+              </div>
+              
+            </td>
+            <td>
+                <span class="category">Technology</span>
+            </td>
+            <td>
+                <span class="tags">#TechGiant</span>
+            </td>
+            <td>
+                <span class="nextMeeting">In 1 hour</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="brand-logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png" alt="Microsoft" width="50px" height="50px">
+                <h4>Paypal</h4>
+              </div>
+            </td>
+            <td>Description of Microsoft</td>
+            <td>
+              <div class="avatar-container">
+                <img src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-1-512.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-man-avatar-with-circle-frame-vector-ilustration-png-image_6110328.png" class="img" alt="Avatar 5" width="30px">
+                <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-1-512.png" class="img" alt="Avatar 5" width="30px">
+              </div>
+              
+            </td>
+            <td>
+                <span class="category">Technology</span>
+            </td>
+            <td>
+                <span class="tags">#TechGiant</span>
+            </td>
+            <td>
+                <span class="nextMeeting">In 1 hour</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

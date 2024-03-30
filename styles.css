@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  height: 100vh;
+}
+
+
+
+.sidebar {
+  top: 0;
+  left: 0;
+  height: 100vh; 
+  width: 250px; 
+  background-color: #f5f5f5;
+  display: flex; 
+  flex-direction: column;
+}
+
+
+.logo {
+  padding: 20px;
+  display: flex;
+  align-items: center; 
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  margin-left: 12px;
+}
+
+
+.nav {
+  flex: 1;
+  overflow-y: auto; 
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd; 
+}
+
+.nav-list li:hover{
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.nav-list li a {
+  text-decoration: none; 
+  color: #333;
+}
+
+.nav-list li a:hover {
+  background-color: #eee; 
+}
+
+.folders,
+.sections { 
+  padding: 15px;
+}
+
+.folder-heading,
+.section-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+.folder-list,
+.section-list { 
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.folder-list li,
+.section-list li { 
+  padding: 5px 0;
+  margin: 8px;
+}
+
+.folder-list li:hover{
+  cursor: pointer;
+  color: #666; 
+  background-color: #eee;
+}
+
+.folder-list li a,
+.section-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.folder-list li a:hover,
+.section-list li a:hover { 
+  color: #666; 
+}
+
+
+.sidebar-bottom {
+  padding: 15px;
+  display: flex; 
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.sidebar-bottom button,
+.help-link {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+#inviteBtn,
+#trialBtn,
+#billingBtn { 
+  background-color: #333;
+  color: #fff;
+  margin-top: 8px;
+}
+
+#inviteBtn:hover,
+#trialBtn:hover,
+#billingBtn:hover {
+  background-color: #222; 
+}
+
+.help-link {
+  color: #333;
+  text-decoration: underline; 
+}
+
+.help-link:hover {
+  color: #666; 
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-table {
+  margin-top: 20px;
+}
+
+.product-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button,
+.search-buttons button {
+  margin-right: 10px;
+}
+
+.filter-buttons>button, .search-buttons>button{
+    padding: 10px;
+    border-radius: 12px;
+    border-color: #ececec;
+
+}
+
+.avatar-container {
+  top: -12px;
+  position: relative;
+}
+
+.avatar-container img {
+  position: absolute;
+  cursor: pointer;
+}
+
+.avatar-container img:nth-child(1) {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.avatar-container img:nth-child(2) {
+  top: 0;
+  left: 23px;
+  z-index: 2;
+}
+
+.avatar-container img:nth-child(3) {
+  top: 0;
+  left: 46px;
+  z-index: 3;
+}
+
+.avatar-container img:nth-child(4) {
+  top: 0;
+  left: 69px;
+  z-index: 4;
+}
+
+.avatar-container img:nth-child(5) {
+  top: 0;
+  left: 92px;
+  z-index: 5;
+}
+
+.brand-logo {
+  display: flex;
+}
+
+.category {
+  background-color: antiquewhite;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border-radius: 12px;
+  color: rgb(98, 57, 57);
+}
+
+.tags {
+  background-color: rgb(202, 202, 202);
+  padding: 6px;
+  border-radius: 12px;
+  color: rgb(92, 92, 92);
+}
+
+.nextMeeting {
+  background-color: rgb(186, 244, 170);
+  text-align: center;
+  padding: 5px;
+  border-radius: 12px;
+  color: rgb(84, 84, 84);
+}
+
+.brand-logo > img {
+  background-color: #ececec;
+  border-radius: 12px;
+  padding: 3px;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .avatar-container img {
+    position: static;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .brand-logo > img {
+    margin-right: 0;
+  }
+
+  .filter-buttons button,
+  .search-buttons button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+  }
+
+  .sidebar-bottom button,
+  .help-link {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+  
+
+
+  
